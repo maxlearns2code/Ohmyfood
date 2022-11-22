@@ -1,0 +1,94 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*header*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+  background-color: white;
+}
+
+nav img {
+  width: 175px;
+  margin: 20px 0px 10px 0px;
+}
+
+/*main*/
+/*search-bar*/
+#search-bar {
+  background-color: #e8e8e8;
+  width: 100%;
+  text-align: center;
+}
+
+#search {
+  width: 125px;
+  background-color: #e8e8e8;
+  border: none;
+  text-align: center;
+  margin: 15px 0px 15px 0px;
+}
+
+/*discover*/
+#discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+
+#discover h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 75px 0px 75px;
+}
+
+#discover p {
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 30px 30px 30px;
+}
+
+#explore {
+  display: flex;
+  width: 210px;
+  margin-bottom: 50px;
+  padding: 14px 17px 14px 17px;
+  color: white;
+  background-color: #9356DC;
+  border: 1px solid #9356DC;
+  border-radius: 100px;
+}
+
+/*fonction*/
+#fonction h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 20px 20px 20px;
+}
+
+/*footer*/
+
+/*# sourceMappingURL=style.css.map */
