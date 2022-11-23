@@ -13,19 +13,16 @@
     </head>
     <body>
         <!--header-->
-        <header>
-            <nav>
-                <button type="submit" id="magn-glass"><i class="fa-solid fa-arrow-left"></i></button>
-                <img src="images/logo/ohmyfood.png" alt="logo">
-            </nav>
+        <header class="header">
+            <button class="header__button" type="submit"><i class="fa-solid fa-arrow-left"></i></button>
+            <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo">
         </header>
         <!--main-->
         <main>
             <!--search-bar-->
-            <form id="search-bar" method="post" action="traitement.php">
-                <i class="fa-solid fa-location-dot" id="loc"></i>
-                <input type="search" value="Paris, Belleville" id="search"
-                >
+            <form class="search-bar" method="post" action="traitement.php">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="search" value="Paris, Belleville">
             </form>
             <!--discover-->
             <section id="discover">
@@ -36,14 +33,50 @@
                 </form>
             </section>
             <!--fonction-->
-            <section id="fonction">
+            <section class="fonction">
                 <h2>Fonctionnement</h2>
                 <a href="#">
-                    <article class="elements-card">
-
+                    <article class="fonction__card">
+                        <h3>1</h3>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choississez un restaurant</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="fonction__card">
+                        <h3>2</h3>
+                        <i class="fa-solid fa-list"></i>
+                        <p>Composez votre menu</p>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="fonction__card">
+                        <h3>3</h3>
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
                     </article>
                 </a>
             </section>
+            <!--restaurants-->
+            <section class="restaurants">
+                <h2>Restaurants</h2>
+                <a href="#">
+                    <article class="card">
+                        <div class="card__image">
+                            <p>Nouveau</p>
+                            <img src="images/restaurants/jay.jpg" alt="La palette du goût">       
+                        </div>
+                        <div class="card__body">
+                            <div class="card__text">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="card__logo">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>  
+                    </article>
+                </a>
         </main>
         <!--footer--> 
         <footer>

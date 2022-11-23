@@ -12,37 +12,39 @@ html, body {
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 /*header*/
-nav {
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 1px 10px 0px grey;
 }
-
-nav button {
+.header__button {
   display: none;
   background-color: white;
 }
-
-nav img {
+.header__logo {
   width: 175px;
   margin: 20px 0px 10px 0px;
 }
 
 /*main*/
 /*search-bar*/
-#search-bar {
+.search-bar {
   background-color: #e8e8e8;
+  margin-top: 60px;
   width: 100%;
   text-align: center;
 }
-
-#search {
+.search-bar input {
   width: 125px;
   background-color: #e8e8e8;
   border: none;
@@ -53,26 +55,22 @@ nav img {
 /*discover*/
 #discover {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   background-color: #f8f8f8;
 }
-
 #discover h1 {
   text-align: center;
   font-size: 22px;
   font-weight: 700;
   margin: 40px 75px 0px 75px;
 }
-
 #discover p {
   text-align: center;
   font-size: 18px;
   margin: 15px 30px 30px 30px;
 }
-
-#explore {
-  display: flex;
+#discover #explore {
   width: 210px;
   margin-bottom: 50px;
   padding: 14px 17px 14px 17px;
@@ -83,10 +81,106 @@ nav img {
 }
 
 /*fonction*/
-#fonction h2 {
+.fonction {
+  display: flex;
+  flex-direction: column;
+}
+.fonction h2 {
   font-size: 22px;
   font-weight: 700;
-  margin: 40px 20px 20px 20px;
+  margin: 50px 20px 10px 20px;
+}
+.fonction a {
+  width: 100%;
+}
+.fonction__card {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  margin: 10px 20px 10px 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px 2px #e8e8e8;
+}
+.fonction__card:hover {
+  background-color: #9356DC;
+}
+.fonction__card h3 {
+  margin-right: 20px;
+  padding: 3px 7px 3px 7px;
+  font-size: 14px;
+  color: white;
+  background: #9356DC;
+  border: 2px solid #9356DC;
+  border-radius: 100%;
+}
+.fonction__card i {
+  margin-right: 20px;
+  font-size: 22px;
+  color: grey;
+}
+.fonction__card i:hover {
+  color: #9356DC;
+}
+.fonction__card p {
+  font-weight: 700;
+}
+
+/*restaurants*/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+.restaurants h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 50px 20px 10px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 10px 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px 2px #e8e8e8;
+}
+.card__image p {
+  position: relative;
+  top: 0;
+  color: black;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+.card__image img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.card__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px 15px 10px;
+}
+.card__body h3 {
+  margin: 0;
+}
+.card__body p {
+  margin: 0px;
+  padding-top: 5px;
+}
+.card__body i {
+  color: grey;
+  font-size: 22px;
+  margin: 10px 20px 0px 0px;
 }
 
 /*footer*/
