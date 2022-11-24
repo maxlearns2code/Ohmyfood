@@ -84,10 +84,11 @@ a {
 .fonction {
   display: flex;
   flex-direction: column;
+  height: 440px;
 }
 .fonction h2 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 50px 20px 10px 20px;
 }
 .fonction a {
@@ -104,7 +105,8 @@ a {
   box-shadow: 0px 5px 10px 2px #e8e8e8;
 }
 .fonction__card:hover {
-  background-color: #9356DC;
+  background-color: #ece1f9;
+  border: 1px solid #ece1f9;
 }
 .fonction__card h3 {
   margin-right: 20px;
@@ -132,10 +134,11 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
+  height: 1230px;
 }
 .restaurants h2 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 50px 20px 10px 20px;
 }
 
@@ -144,16 +147,16 @@ a {
   display: flex;
   flex-direction: column;
   margin: 10px 20px 10px 20px;
-  background-color: #f8f8f8;
+  background-color: white;
   border: 1px solid #f8f8f8;
   border-radius: 25px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
 }
 .card__image p {
   position: absolute;
-  left: 70%;
+  right: 20px;
   text-align: center;
-  color: black;
+  color: #278870;
   font-size: 14px;
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
@@ -179,10 +182,13 @@ a {
   margin: 0px;
   padding-top: 5px;
 }
-.card__body i {
+.card__logo i {
   color: grey;
   font-size: 22px;
-  margin: 10px 20px 0px 0px;
+  margin-right: 20px;
+}
+.card__logo:hover {
+  color: #9356DC;
 }
 
 /*footer*/
@@ -190,10 +196,10 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: #f8f8f8;
-  filter: invert(100%);
+  background-color: #404040;
 }
 .footer__logo {
+  filter: invert(100%);
   margin: 30px 0px 0px 20px;
   width: 100px;
 }
@@ -201,6 +207,7 @@ a {
   margin: 10px 0px 30px 20px;
 }
 .footer__items i {
+  color: white;
   width: 14px;
   padding-right: 25px;
 }
@@ -211,6 +218,9 @@ a {
 }
 .footer__items li {
   margin-top: 5px;
+}
+.footer__items a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
