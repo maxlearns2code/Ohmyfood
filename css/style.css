@@ -21,6 +21,7 @@ a {
   position: absolute;
   top: 0;
   width: 100%;
+  height: 65px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,7 +41,7 @@ a {
 /*search-bar*/
 .search-bar {
   background-color: #e8e8e8;
-  margin-top: 60px;
+  margin-top: 65px;
   width: 100%;
   text-align: center;
 }
@@ -221,6 +222,77 @@ a {
 }
 .footer__items a {
   color: white;
+}
+
+/*page2*/
+/*menu*/
+.menu {
+  margin: 280px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 50px 50px 0px 0px;
+}
+.menu__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 0px 20px;
+}
+.menu__heading h1 {
+  font-family: "Shrikhand", cursive;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.menu__heading i {
+  color: grey;
+  font-size: 22px;
+  padding-right: 20px;
+}
+
+.starter {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 0px 20px;
+}
+.starter h2 {
+  font-size: 16px;
+  font-weight: 200;
+}
+.starter article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 2px #e8e8e8;
+  margin-bottom: 10px;
+}
+.starter__card-text h3 {
+  margin: 10px 0px 0px 10px;
+}
+.starter__card-text p {
+  margin: 5px 0px 10px 10px;
+}
+.starter__card-price {
+  display: flex;
+  align-items: flex-end;
+}
+.starter__card-price p {
+  font-weight: 700;
+  margin: 0px 20px 10px 0px;
+}
+
+#wallpaper img {
+  position: absolute;
+  top: 0;
+  margin-top: 65px;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
