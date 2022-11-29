@@ -27,14 +27,16 @@ a {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 1px 10px 0px grey;
+  padding: 20px 0px 10px 0px;
 }
-.header__button {
-  display: none;
-  background-color: white;
+.header i {
+  position: absolute;
+  font-size: 22px;
+  top: 25px;
+  left: 20px;
 }
 .header__logo {
   width: 175px;
-  margin: 20px 0px 10px 0px;
 }
 
 /*main*/
@@ -71,7 +73,8 @@ a {
   font-size: 18px;
   margin: 15px 30px 30px 30px;
 }
-#discover #explore {
+
+#explore {
   width: 210px;
   margin-bottom: 50px;
   padding: 14px 17px 14px 17px;
@@ -239,17 +242,30 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
   margin: 20px 20px 0px 20px;
 }
 .menu__heading h1 {
   font-family: "Shrikhand", cursive;
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin: 0;
 }
 .menu__heading i {
   color: grey;
   font-size: 22px;
   padding-right: 20px;
+}
+.menu__body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.menu form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.menu #explore {
+  margin: 0;
 }
 
 .starter {
@@ -269,6 +285,7 @@ a {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 .starter__card-text h3 {

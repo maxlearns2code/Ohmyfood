@@ -14,7 +14,9 @@
     <body>
         <!--header-->
         <header class="header">
-            <button class="header__button" type="submit"><i class="fa-solid fa-arrow-left"></i></button>
+            <a href="/index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
             <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo">
         </header>
         <!--main-->
@@ -25,55 +27,131 @@
                     <h1>A la française</h1>
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <!--starter-->
-                <section class="starter">
-                    <h2>ENTREES</h2>
-                    <article>
-                        <div class="starter__card-text">
-                            <h3>Tartare de poulpe acidulé</h3>
-                            <p>Aux zestes d'orange</p>
-                        </div>
-                        <div class="starter__card-price">
-                            <p>25€</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="starter__card-text">
-                            <h3>Velouté de légumes d'antan</h3>
-                            <p>Carotte, panais, topinambour</p>
-                        </div>
-                        <div class="starter__card-price">
-                            <p>35€</p>
-                        </div>
-                    </article>
-                </section>    
+                <div class="menu__body">
+                    <!--starter-->
+                    <section class="starter">
+                        <h2>ENTREES</h2>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <p>Aux zestes d'orange</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>25€</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>35€</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Soupe à l'oignon</h3>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>20€</p>
+                            </div>
+                        </article>
+                    </section>
+                    <!--starter-->
+                    <section class="starter">
+                        <h2>PLATS</h2>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Coquille Saint-Jacques</h3>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>40€</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Magret de canard</h3>
+                                <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>35€</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                                <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>44€</p>
+                            </div>
+                        </article>
+                    </section>
+                    <!--starter-->
+                    <section class="starter">
+                        <h2>DESSERTS</h2>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Pétalles de violettes galcés</h3>
+                                <p>Fondant au chocolat</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>18€</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>22€</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="starter__card-text">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d'amande</p>
+                            </div>
+                            <div class="starter__card-price">
+                                <p>23€</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <form  method="post" action="traitement.php">
+                    <button type="submit" id="explore" >Commander</button>
+                </form>
                 <div id="wallpaper">
                     <img src="images/restaurants/toa.jpg" alt="A la française">
                 </div>
-            </main>
-            <!--footer--> 
-            <footer class="footer">
-                <img class="footer__logo" src="images/logo/ohmyfood.png" alt="logo">
-                <div class="footer__items">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-utensils"></i>Proposer un restaurant
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Mentions légales</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+        </main>
+        <!--footer--> 
+        <footer class="footer">
+            <img class="footer__logo" src="images/logo/ohmyfood.png" alt="logo">
+            <div class="footer__items">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-utensils"></i>Proposer un restaurant
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </footer>
     </body>
