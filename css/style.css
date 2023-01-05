@@ -38,21 +38,46 @@ a {
     transform: translatex(-9999px);
   }
 }
-.loader .spinner {
-  width: 75px;
-  height: 75px;
-  border: 10px solid #FF79DA;
-  border-bottom: 10px solid #9356DC;
-  border-radius: 50%;
-  animation: spinner 1.5s linear infinite;
+.loader .letter {
+  font-family: "Shrikhand", cursive;
+  padding: 5px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #9356DC;
+  animation: letter infinite 0.3s alternate;
 }
-@keyframes spinner {
+@keyframes letter {
   0% {
-    transform: rotate(0deg);
+    transform: scaleY(0.3);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scaleY(1) translatey(-30px);
   }
+}
+.loader .letter--1 {
+  animation-delay: 0.05s;
+}
+.loader .letter--2 {
+  animation-delay: 0.1s;
+}
+.loader .letter--3 {
+  animation-delay: 0.15s;
+}
+.loader .letter--4 {
+  animation-delay: 0.2s;
+  color: #FF79DA;
+}
+.loader .letter--5 {
+  animation-delay: 0.25s;
+}
+.loader .letter--6 {
+  animation-delay: 0.3s;
+}
+.loader .letter--7 {
+  animation-delay: 0.35s;
+}
+.loader .letter--8 {
+  animation-delay: 0.4s;
 }
 
 /*header*/
@@ -380,6 +405,9 @@ a {
 .plates__choices--1 {
   animation: item-1 1000ms 200ms;
 }
+.plates__choices--1:hover .plates__card-check {
+  display: block;
+}
 @keyframes item-1 {
   0% {
     transform: translateY(-200px);
@@ -390,6 +418,9 @@ a {
 }
 .plates__choices--2 {
   animation: item-2 1000ms 400ms;
+}
+.plates__choices--2:hover .plates__card-check {
+  display: block;
 }
 @keyframes item-2 {
   0% {
@@ -402,6 +433,9 @@ a {
 .plates__choices--3 {
   animation: item-3 1000ms 600ms;
 }
+.plates__choices--3:hover .plates__card-check {
+  display: block;
+}
 @keyframes item-3 {
   0% {
     transform: translateY(-200px);
@@ -412,6 +446,9 @@ a {
 }
 .plates__choices--4 {
   animation: item-4 1000ms 1000ms;
+}
+.plates__choices--4:hover .plates__card-check {
+  display: block;
 }
 @keyframes item-4 {
   0% {
@@ -424,6 +461,9 @@ a {
 .plates__choices--5 {
   animation: item-5 1000ms 1200ms;
 }
+.plates__choices--5:hover .plates__card-check {
+  display: block;
+}
 @keyframes item-5 {
   0% {
     transform: translateY(-200px);
@@ -434,6 +474,9 @@ a {
 }
 .plates__choices--6 {
   animation: item-6 1000ms 1400ms;
+}
+.plates__choices--6:hover .plates__card-check {
+  display: block;
 }
 @keyframes item-6 {
   0% {
@@ -446,6 +489,9 @@ a {
 .plates__choices--7 {
   animation: item-7 1000ms 1800ms;
 }
+.plates__choices--7:hover .plates__card-check {
+  display: block;
+}
 @keyframes item-7 {
   0% {
     transform: translateY(-200px);
@@ -457,6 +503,9 @@ a {
 .plates__choices--8 {
   animation: item-8 1000ms 2000ms;
 }
+.plates__choices--8:hover .plates__card-check {
+  display: block;
+}
 @keyframes item-8 {
   0% {
     transform: translateY(-200px);
@@ -467,6 +516,9 @@ a {
 }
 .plates__choices--9 {
   animation: item-9 1000ms 2200ms;
+}
+.plates__choices--9:hover .plates__card-check {
+  display: block;
 }
 @keyframes item-9 {
   0% {
@@ -494,9 +546,6 @@ a {
 .plates__card-price p {
   font-weight: 700;
   margin-bottom: 10px;
-}
-.plates__card-price:hover + .plates__card-check {
-  display: block;
 }
 .plates__card-check {
   display: none;

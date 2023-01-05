@@ -45,21 +45,47 @@ a {
          transform: translatex(-9999px);
          }
    }
-   .spinner {
-      width: 75px;
-      height: 75px;
-      border: 10px solid $color-secondary;
-      border-bottom: 10px solid $color-primary;
-      border-radius: 50%;
-      animation: spinner 1.5s linear infinite;
-   }
-   @keyframes spinner {
-      0% {
-         transform: rotate(0deg);
-         }
-      100% {
-         transform: rotate(360deg);
-         }
+   .letter {
+      font-family: $font-secondary;
+      padding: 5px;
+      font-size: 50px;
+      font-weight: 900;
+      color: $color-primary;
+      animation: letter infinite 0.3s alternate;
+      @keyframes letter {
+         0% {
+            transform: scaleY(0.3);
+            
+        }
+        100% {
+            transform: scaleY(1) translatey(-30px);
+        }
+      }
+      &--1 {
+         animation-delay: 0.05s;
+      }
+      &--2 {
+         animation-delay: 0.1s;
+      }
+      &--3 {
+         animation-delay: 0.15s;
+      }
+      &--4 {
+         animation-delay: 0.2s;
+         color: $color-secondary;
+      }
+      &--5 {
+         animation-delay: 0.25s;
+      }
+      &--6 {
+         animation-delay: 0.3s;
+      }
+      &--7 {
+         animation-delay: 0.35s;
+      }
+      &--8 {
+         animation-delay: 0.4s;
+      }
    }
 }
 /*header*/
@@ -378,6 +404,9 @@ a {
       font-size: 14px;
       margin-bottom: 10px;
       &--1 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-1 1000ms 200ms;
       }
       @keyframes item-1 {
@@ -388,7 +417,11 @@ a {
             transform: translateY(0);
             }
       }
+
       &--2 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-2 1000ms 400ms;
       }
       @keyframes item-2 {
@@ -400,6 +433,9 @@ a {
             }
       }
       &--3 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-3 1000ms 600ms;
       }
       @keyframes item-3 {
@@ -411,6 +447,9 @@ a {
             }
       }
       &--4 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-4 1000ms 1000ms;
       }
       @keyframes item-4 {
@@ -422,6 +461,9 @@ a {
             }
       }
       &--5 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-5 1000ms 1200ms;
       }
       @keyframes item-5 {
@@ -433,6 +475,9 @@ a {
             }
       }
       &--6 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-6 1000ms 1400ms;
       }
       @keyframes item-6 {
@@ -444,6 +489,9 @@ a {
             }
       }
       &--7 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-7 1000ms 1800ms;
       }
       @keyframes item-7 {
@@ -455,6 +503,9 @@ a {
             }
       }
       &--8 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-8 1000ms 2000ms;
       }
       @keyframes item-8 {
@@ -466,6 +517,9 @@ a {
             }
       }
       &--9 {
+         &:hover .plates__card-check{
+            display: block;
+         }
          animation: item-9 1000ms 2200ms;
       }
       @keyframes item-9 {
@@ -497,9 +551,6 @@ a {
       p {
          font-weight: 700;
          margin-bottom: 10px;
-      }
-      &:hover + .plates__card-check{
-         display: block;
       }
    }
 
