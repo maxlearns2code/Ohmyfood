@@ -1,21 +1,3 @@
-html, body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
 /*loader*/
 .loader {
   display: flex;
@@ -27,7 +9,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #f8f8f8;
   animation: loader 0ms 3s both;
 }
 @keyframes loader {
@@ -43,7 +25,9 @@ a {
   padding: 5px;
   font-size: 50px;
   font-weight: 900;
-  color: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   animation: letter infinite 0.3s alternate;
 }
 @keyframes letter {
@@ -101,6 +85,38 @@ a {
 }
 .header__logo {
   width: 175px;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #404040;
+}
+.footer__logo {
+  filter: invert(100%);
+  margin: 25px 0px 0px 20px;
+  width: 100px;
+}
+.footer__items {
+  margin: 15px 0px 40px 20px;
+}
+.footer__items i {
+  color: white;
+  width: 14px;
+  padding-right: 25px;
+}
+.footer__items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__items li {
+  margin-top: 5px;
+}
+.footer__items a {
+  color: white;
 }
 
 /*main*/
@@ -259,48 +275,15 @@ a {
   height: 22px;
   z-index: 2;
   right: 0;
-  fill: white;
+  fill-opacity: 0;
   stroke-width: 20px;
   stroke: black;
   margin-right: 20px;
 }
 .card__logo svg:hover {
-  fill: rgb(255, 121, 218);
+  fill-opacity: 1;
 }
 
-/*footer*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  background-color: #404040;
-}
-.footer__logo {
-  filter: invert(100%);
-  margin: 25px 0px 0px 20px;
-  width: 100px;
-}
-.footer__items {
-  margin: 15px 0px 40px 20px;
-}
-.footer__items i {
-  color: white;
-  width: 14px;
-  padding-right: 25px;
-}
-.footer__items ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.footer__items li {
-  margin-top: 5px;
-}
-.footer__items a {
-  color: white;
-}
-
-/*page2*/
 /*menu*/
 .menu {
   margin: 280px 0px 0px 0px;
@@ -396,6 +379,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 60px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
@@ -405,8 +389,8 @@ a {
 .plates__choices--1 {
   animation: item-1 1000ms 200ms;
 }
-.plates__choices--1:hover .plates__card-check {
-  display: block;
+.plates__choices--1:hover .plates__card-price .logo {
+  opacity: 1;
 }
 @keyframes item-1 {
   0% {
@@ -539,13 +523,46 @@ a {
   text-overflow: ellipsis;
 }
 .plates__card-price {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  right: 20px;
-  padding-top: 20px;
+  right: -60px;
+  animation: card-price 1000ms 200ms;
 }
 .plates__card-price p {
   font-weight: 700;
   margin-bottom: 10px;
+  padding: 20px 20px 0px 20px;
+}
+.plates__card-price .logo {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: #99E2D0;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+.plates__card-price .logo i {
+  font-size: 24px;
+  animation: check 500ms 500ms;
+}
+@keyframes check {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes card-price {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .plates__card-check {
   display: none;
@@ -557,10 +574,27 @@ a {
   border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   overflow: hidden;
-  animation-name: check;
+  animation: card-check 1000ms 0ms;
 }
 .plates__card-check i {
   font-size: 25px;
+  animation: check 500ms 500ms;
+}
+@keyframes check {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes card-check {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #wallpaper img {
@@ -571,6 +605,24 @@ a {
   width: 100%;
   height: 270px;
   object-fit: cover;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

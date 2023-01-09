@@ -1,0 +1,331 @@
+/*menu*/
+.menu {
+   margin: 280px 0px 0px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: $background-color;
+   border-radius: 35px 35px 0px 0px;
+   &__heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px 20px 20px 20px;  
+      h1 {
+         font-family: $font-secondary;
+         font-weight: 400;
+         margin: 0;
+      }
+      i {
+         color: grey;
+         font-size: 22px;
+         padding-right: 20px;
+      }
+   }
+   &__body {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 20px 0px 20px;
+   }
+   form {
+      margin: 10px 0px 20px 0px;
+      display: flex;
+      justify-content: center;
+   }
+   #explore {
+      margin: 0;
+   }
+}
+/*plates*/
+.plates {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   &--1 {
+      animation: starter 1000ms 0ms both;
+   }
+   @keyframes starter {
+      0% {
+         transform: translatex(-9999px);
+         }
+      100% {
+         transform: translatex(0);
+         }
+  }
+  &--2 {
+   animation: plate 1000ms 800ms both;
+   }
+   @keyframes plate {
+      0% {
+         transform: translatex(-9999px);
+         }
+      100% {
+         transform: translatex(0);
+         }
+   }
+   &--3 {
+   animation: dessert 1000ms 1600ms both;
+   }
+   @keyframes dessert {
+      0% {
+         transform: translatex(-9999px);
+         }
+      100% {
+         transform: translatex(0);
+         }
+   }
+   h2 {
+      font-size: 16px;
+      font-weight: 200;
+      margin-bottom: 5px;
+   }
+   span p {
+      width: 40px;
+      height: 3px;
+      border: 1.5px solid $color-tertiary;
+      background-color: #99E2D0;
+      margin-top: 0;
+   }
+   &__choices {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 60px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0px 5px 10px 2px #e8e8e8;
+      font-size: 14px;
+      margin-bottom: 10px;
+      &--1 {
+         &:hover .plates__card-price {
+            .logo {
+               opacity: 1;
+            }
+
+         }
+         animation: item-1 1000ms 200ms;
+      }
+      @keyframes item-1 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--2 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-2 1000ms 400ms;
+      }
+      @keyframes item-2 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--3 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-3 1000ms 600ms;
+      }
+      @keyframes item-3 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--4 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-4 1000ms 1000ms;
+      }
+      @keyframes item-4 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--5 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-5 1000ms 1200ms;
+      }
+      @keyframes item-5 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--6 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-6 1000ms 1400ms;
+      }
+      @keyframes item-6 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--7 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-7 1000ms 1800ms;
+      }
+      @keyframes item-7 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--8 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-8 1000ms 2000ms;
+      }
+      @keyframes item-8 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      &--9 {
+         &:hover .plates__card-check{
+            display: block;
+         }
+         animation: item-9 1000ms 2200ms;
+      }
+      @keyframes item-9 {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      
+   }
+   &__card-text {
+      h3 {
+         margin: 10px 0px 0px 10px;
+      }
+      p {
+         width: 200px;
+         margin: 5px 0px 10px 10px;
+         overflow: hidden;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+      }
+   }
+   &__card-price {
+      display: 
+      flex;
+      flex-direction: row;
+      position: relative;
+      right: -60px;
+      animation: card-price 1000ms 200ms;
+      p {
+         font-weight: 700;
+         margin-bottom: 10px;
+         padding: 20px 20px 0px 20px;
+      }
+      .logo {
+         padding: 15px 16px 15px 16px;
+         width: 60px;
+         height: 60px;
+         color:white;
+         background-color: $color-tertiary;
+         border: 2px solid $color-tertiary;
+         border-radius: 0px 15px 15px 0px;
+         opacity: 0;
+         i {
+         font-size: 24px;
+         animation: check 500ms 500ms
+         }
+         @keyframes check {
+            0% {
+               transform: rotate(-90deg);
+               }
+            100% {
+               transform: rotate(0);
+               }
+         }
+      }
+      @keyframes card-price {
+         0% {
+            transform: translateY(-200px);
+            }
+         100% {
+            transform: translateY(0);
+            }
+      }
+      
+   }
+   &__card-check {
+      display: none;
+      padding: 15px 16px 15px 16px;
+      width: 60px;
+      height: 60px;
+      color:white;
+      background-color: $color-tertiary;
+      border: 2px solid $color-tertiary;
+      border-radius: 0px 15px 15px 0px;
+      overflow: hidden;
+      animation: card-check 1000ms 0ms;
+      i {
+         font-size: 25px;
+         animation: check 500ms 500ms
+      }
+      @keyframes check {
+         0% {
+            transform: rotate(-90deg);
+            }
+         100% {
+            transform: rotate(0);
+            }
+      }
+      
+   }
+   @keyframes card-check {
+      0% {
+         transform: translateX(200px);
+         }
+      100% {
+         transform: translateX(0);
+         }
+   }
+}
+#wallpaper {
+   img { 
+      position: absolute;
+      z-index: -1;
+      top:0;
+      margin-top: 65px;
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+   }
+}

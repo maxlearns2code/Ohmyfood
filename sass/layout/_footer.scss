@@ -1,0 +1,32 @@
+
+/*footer*/
+.footer {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   background-color: darken(grey,25%);   
+   &__logo {
+      filter: invert(100%);
+      margin: 25px 0px 0px 20px;      
+      width: 100px;
+   }
+   &__items {
+      margin: 15px 0px 40px 20px;
+      i {
+         color: white;
+         width: 14px;
+         padding-right: 25px;
+      }
+      ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+      }
+      li {
+         margin-top: 5px;
+      }
+      a {
+         color: white;
+      }
+   }
+}
