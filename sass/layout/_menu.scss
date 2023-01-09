@@ -91,6 +91,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      
       height: 60px;
       background-color: white;
       border-radius: 20px;
@@ -98,12 +99,13 @@
       font-size: 14px;
       margin-bottom: 10px;
       &--1 {
-         &:hover .plates__card-price {
-            .logo {
-               opacity: 1;
+         &:hover .plates__card-check {
+            padding: 15px 16px 15px 16px;
+            width: 60px;
+            height: 60px;
+            border: 2px solid $color-tertiary;
+            border-radius: 0px 15px 15px 0px;
             }
-
-         }
          animation: item-1 1000ms 200ms;
       }
       @keyframes item-1 {
@@ -231,9 +233,11 @@
    &__card-text {
       h3 {
          margin: 10px 0px 0px 10px;
+         overflow: hidden;
+         white-space: nowrap;
+         text-overflow: ellipsis;
       }
       p {
-         width: 200px;
          margin: 5px 0px 10px 10px;
          overflow: hidden;
          white-space: nowrap;
@@ -245,56 +249,24 @@
       flex;
       flex-direction: row;
       position: relative;
-      right: -60px;
+      margin-right: -60px;
       animation: card-price 1000ms 200ms;
       p {
          font-weight: 700;
          margin-bottom: 10px;
          padding: 20px 20px 0px 20px;
-      }
-      .logo {
-         padding: 15px 16px 15px 16px;
-         width: 60px;
-         height: 60px;
-         color:white;
-         background-color: $color-tertiary;
-         border: 2px solid $color-tertiary;
-         border-radius: 0px 15px 15px 0px;
-         opacity: 0;
-         i {
-         font-size: 24px;
-         animation: check 500ms 500ms
-         }
-         @keyframes check {
-            0% {
-               transform: rotate(-90deg);
-               }
-            100% {
-               transform: rotate(0);
-               }
-         }
-      }
-      @keyframes card-price {
-         0% {
-            transform: translateY(-200px);
-            }
-         100% {
-            transform: translateY(0);
-            }
-      }
-      
+      }      
    }
    &__card-check {
-      display: none;
-      padding: 15px 16px 15px 16px;
-      width: 60px;
-      height: 60px;
+      padding: 0px;
+      width: 0px;
+      height:0px;
       color:white;
       background-color: $color-tertiary;
-      border: 2px solid $color-tertiary;
-      border-radius: 0px 15px 15px 0px;
+      border: 0px solid $color-tertiary;
+      border-radius: 0px;
       overflow: hidden;
-      animation: card-check 1000ms 0ms;
+      transition: width 2s;
       i {
          font-size: 25px;
          animation: check 500ms 500ms
