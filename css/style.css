@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   background-color: #f8f8f8;
-  animation: loader 0ms 3s both;
+  animation: loader 0ms 2s both;
 }
 @keyframes loader {
   0% {
@@ -164,6 +164,10 @@
   border: 1px solid #f8f8f8;
   border-radius: 100px;
 }
+#explore:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 5px 10px 2px #cfcfcf;
+}
 
 /*fonction*/
 .fonction {
@@ -190,6 +194,7 @@
   box-shadow: 0px 5px 10px 2px #e8e8e8;
 }
 .fonction__card:hover {
+  transform: scale(1.02);
   background-color: #ece1f9;
   border: 1px solid #ece1f9;
   box-shadow: 0px 5px 10px 2px #cfcfcf;
@@ -238,6 +243,10 @@
   border-radius: 25px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
 }
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 5px 10px 2px #cfcfcf;
+}
 .card__image p {
   position: absolute;
   right: 20px;
@@ -280,10 +289,22 @@
   stroke: black;
   margin-right: 20px;
 }
-.card__logo svg:hover {
+.card__logo svg:hover, .card__logo svg :active {
   fill-opacity: 1;
+  stroke-width: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 344px;
+  }
+}
 /*menu*/
 .menu {
   margin: 280px 0px 0px 0px;
@@ -305,10 +326,20 @@
   font-weight: 400;
   margin: 0;
 }
-.menu__heading i {
-  color: grey;
-  font-size: 22px;
-  padding-right: 20px;
+.menu__heading svg {
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  z-index: 2;
+  right: 0;
+  fill-opacity: 0;
+  stroke-width: 20px;
+  stroke: black;
+  margin-right: 20px;
+}
+.menu__heading svg:hover {
+  fill-opacity: 1;
+  stroke-width: 0;
 }
 .menu__body {
   display: flex;
@@ -389,12 +420,24 @@
 .plates__choices--1 {
   animation: item-1 1000ms 200ms;
 }
-.plates__choices--1:hover .plates__card-check {
+.plates__choices--1:hover .check, .plates__choices--1 :active .check {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
   border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--1:hover .check i, .plates__choices--1 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-1 {
   0% {
@@ -407,8 +450,24 @@
 .plates__choices--2 {
   animation: item-2 1000ms 400ms;
 }
-.plates__choices--2:hover .plates__card-check {
-  display: block;
+.plates__choices--2:hover .check, .plates__choices--2 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--2:hover .check i, .plates__choices--2 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-2 {
   0% {
@@ -421,8 +480,24 @@
 .plates__choices--3 {
   animation: item-3 1000ms 600ms;
 }
-.plates__choices--3:hover .plates__card-check {
-  display: block;
+.plates__choices--3:hover .check, .plates__choices--3 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--3:hover .check i, .plates__choices--3 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-3 {
   0% {
@@ -435,8 +510,24 @@
 .plates__choices--4 {
   animation: item-4 1000ms 1000ms;
 }
-.plates__choices--4:hover .plates__card-check {
-  display: block;
+.plates__choices--4:hover .check, .plates__choices--4 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--4:hover .check i, .plates__choices--4 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-4 {
   0% {
@@ -449,8 +540,24 @@
 .plates__choices--5 {
   animation: item-5 1000ms 1200ms;
 }
-.plates__choices--5:hover .plates__card-check {
-  display: block;
+.plates__choices--5:hover .check, .plates__choices--5 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--5:hover .check i, .plates__choices--5 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-5 {
   0% {
@@ -463,8 +570,24 @@
 .plates__choices--6 {
   animation: item-6 1000ms 1400ms;
 }
-.plates__choices--6:hover .plates__card-check {
-  display: block;
+.plates__choices--6:hover .check, .plates__choices--6 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--6:hover .check i, .plates__choices--6 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-6 {
   0% {
@@ -477,8 +600,24 @@
 .plates__choices--7 {
   animation: item-7 1000ms 1800ms;
 }
-.plates__choices--7:hover .plates__card-check {
-  display: block;
+.plates__choices--7:hover .check, .plates__choices--7 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--7:hover .check i, .plates__choices--7 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-7 {
   0% {
@@ -491,8 +630,24 @@
 .plates__choices--8 {
   animation: item-8 1000ms 2000ms;
 }
-.plates__choices--8:hover .plates__card-check {
-  display: block;
+.plates__choices--8:hover .check, .plates__choices--8 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--8:hover .check i, .plates__choices--8 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-8 {
   0% {
@@ -505,8 +660,24 @@
 .plates__choices--9 {
   animation: item-9 1000ms 2200ms;
 }
-.plates__choices--9:hover .plates__card-check {
-  display: block;
+.plates__choices--9:hover .check, .plates__choices--9 :active .check {
+  padding: 15px 16px 15px 16px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 1;
+}
+.plates__choices--9:hover .check i, .plates__choices--9 :active .check i {
+  animation: check 0.5s;
+}
+@keyframes check {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0) deg;
+  }
 }
 @keyframes item-9 {
   0% {
@@ -531,8 +702,6 @@
 .plates__card-price {
   display: flex;
   flex-direction: row;
-  position: relative;
-  margin-right: -60px;
   animation: card-price 1000ms 200ms;
 }
 .plates__card-price p {
@@ -540,36 +709,19 @@
   margin-bottom: 10px;
   padding: 20px 20px 0px 20px;
 }
-.plates__card-check {
+.plates__card-price .check {
   padding: 0px;
   width: 0px;
   height: 0px;
-  color: white;
-  background-color: #99E2D0;
   border: 0px solid #99E2D0;
   border-radius: 0px;
-  overflow: hidden;
-  transition: width 2s;
+  color: white;
+  background-color: #99E2D0;
+  opacity: 0;
+  transition: width 0.1s;
 }
-.plates__card-check i {
+.plates__card-price .check i {
   font-size: 25px;
-  animation: check 500ms 500ms;
-}
-@keyframes check {
-  0% {
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-@keyframes card-check {
-  0% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 #wallpaper img {

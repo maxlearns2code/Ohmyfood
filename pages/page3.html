@@ -8,7 +8,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-        <link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet" href="../css/style.css" >
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="../images/faviconimage/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../images/favicon/site.webmanifest">
         <title>ohmyfood</title>      
     </head>
     <body>
@@ -17,7 +21,7 @@
             <a href="/index.html">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo">
+            <img class="header__logo" src="../images/logo/ohmyfood.png" alt="logo">
         </header>
         <!--main-->
         <main>
@@ -25,7 +29,15 @@
             <div class="menu">
                 <div class="menu__heading"> 
                     <h1>A la française</h1>
-                    <i class="fa-regular fa-heart"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="url(#Gradient1)" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+                        <defs>
+                            <linearGradient id="Gradient1" x2="0%" y2="100%">
+                              <stop offset="0%" stop-color="#FF79DA" />
+                              
+                              <stop offset="100%" stop-color="#9356DC" />
+                            </linearGradient>
+                          </defs>
+                    </svg>
                 </div>
                 <div class="menu__body">
                     <!--plates-->
@@ -39,8 +51,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>25€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                         <article class="plates__choices plates__choices--2">
                             <div class="plates__card-text">
@@ -49,8 +61,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>35€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                         <article class="plates__choices plates__choices--3">
                             <div class="plates__card-text">
@@ -59,8 +71,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>20€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                     </section>
                     <section class="plates plates--2">
@@ -73,8 +85,9 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>40€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                        </article>
                         </article>
                         <article class="plates__choices plates__choices--5">
                             <div class="plates__card-text">
@@ -83,8 +96,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>35€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                         <article class="plates__choices plates__choices--6">
                             <div class="plates__card-text">
@@ -93,8 +106,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>44€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                     </section>
                     <section class="plates plates--3">
@@ -107,8 +120,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>18€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                         <article class="plates__choices plates__choices--8">
                             <div class="plates__card-text">
@@ -117,8 +130,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>22€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                         <article class="plates__choices plates__choices--9">
                             <div class="plates__card-text">
@@ -127,8 +140,8 @@
                             </div>
                             <div class="plates__card-price">
                                 <p>23€</p>
+                                <div class="check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                             </div>
-                            <div class="plates__card-check"><i class="fa-sharp fa-solid fa-circle-check"></i></div>
                         </article>
                     </section>
                 </div>
@@ -136,13 +149,13 @@
                     <button type="submit" id="explore" >Commander</button>
                 </form>
                 <div id="wallpaper">
-                    <img src="images/restaurants/toa.jpg" alt="A la française">
+                    <img src="../images/restaurants/toa.jpg" alt="A la française">
                 </div>
             </div>
         </main>
         <!--footer--> 
         <footer class="footer">
-            <img class="footer__logo" src="images/logo/ohmyfood.png" alt="logo">
+            <img class="footer__logo" src="../images/logo/ohmyfood.png" alt="logo">
             <div class="footer__items">
                 <ul>
                     <li>
