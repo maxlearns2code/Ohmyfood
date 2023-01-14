@@ -1,4 +1,7 @@
 @mixin check-animation {
+   &:hover .plates__card-text, :active .plates__card-text{
+      width: calc(100% - 124px);
+   }
    &:hover .check, :active .check {
       padding: 15px 16px 15px 16px;
       width: 60px;
@@ -14,7 +17,7 @@
                transform: rotate(360deg);
                }
             100% {
-               transform: rotate(0)deg;
+               transform: rotate(0deg);
                }
          }
       }

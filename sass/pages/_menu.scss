@@ -17,21 +17,6 @@
          font-weight: 400;
          margin: 0;
       }
-      svg {
-         position: absolute;
-         width: 24px;
-         height: 22px;
-         z-index: 2;
-         right: 0;
-         fill-opacity: 0;
-         stroke-width: 20px;
-         stroke: black;
-         margin-right: 20px;
-         &:hover {
-            fill-opacity: 1;
-            stroke-width: 0;
-         }
-      }
    }
    &__body {
       display: flex;
@@ -43,7 +28,7 @@
       display: flex;
       justify-content: center;
    }
-   #explore {
+   #btn {
       margin: 0;
    }
 }
@@ -86,16 +71,17 @@
          }
    }
    h2 {
+      text-transform: uppercase;
       font-size: 16px;
       font-weight: 200;
       margin-bottom: 5px;
    }
-   span p {
+   span {
       width: 40px;
       height: 3px;
       border: 1.5px solid $color-tertiary;
       background-color: #99E2D0;
-      margin-top: 0;
+      margin-bottom: 10px;
    }
    &__choices {
       display: flex;
@@ -217,7 +203,7 @@
       }
       
    }
-   &__card-text {
+   &__card-text { 
       h3 {
          margin: 10px 0px 0px 10px;
          overflow: hidden;

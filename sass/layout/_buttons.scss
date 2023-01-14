@@ -1,0 +1,28 @@
+#btn {
+   width: 210px;
+   margin-bottom: 50px;
+   padding: 14px 17px 14px 17px;
+   color:white;
+   background: $color-button;
+   border: 0px solid $background-color;
+   border-radius: 100px;
+   &:hover, :active {
+      transform: scale(1.02);
+      box-shadow: 0px 5px 10px 2px darken(#e8e8e8,10%);
+   }
+}
+svg {
+   position: absolute;
+   width: 24px;
+   height: 22px;
+   z-index: 2;
+   right: 0;
+   fill-opacity: 0;
+   stroke-width: 20px;
+   stroke: black;
+   margin-right: 20px;
+   &:hover, :active {
+      fill-opacity: 1;
+      stroke-width: 0;
+   }
+}

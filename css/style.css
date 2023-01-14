@@ -1,3 +1,33 @@
+#btn {
+  width: 210px;
+  margin-bottom: 50px;
+  padding: 14px 17px 14px 17px;
+  color: white;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border: 0px solid #f8f8f8;
+  border-radius: 100px;
+}
+#btn:hover, #btn :active {
+  transform: scale(1.02);
+  box-shadow: 0px 5px 10px 2px #cfcfcf;
+}
+
+svg {
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  z-index: 2;
+  right: 0;
+  fill-opacity: 0;
+  stroke-width: 20px;
+  stroke: black;
+  margin-right: 20px;
+}
+svg:hover, svg :active {
+  fill-opacity: 1;
+  stroke-width: 0;
+}
+
 /*loader*/
 .loader {
   display: flex;
@@ -49,7 +79,6 @@
 }
 .loader .letter--4 {
   animation-delay: 0.2s;
-  color: #FF79DA;
 }
 .loader .letter--5 {
   animation-delay: 0.25s;
@@ -154,21 +183,6 @@
   margin: 15px 30px 30px 30px;
 }
 
-#explore {
-  width: 210px;
-  margin-bottom: 50px;
-  padding: 14px 17px 14px 17px;
-  color: white;
-  background: #9356DC;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  border: 1px solid #f8f8f8;
-  border-radius: 100px;
-}
-#explore:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 5px 10px 2px #cfcfcf;
-}
-
 /*fonction*/
 .fonction {
   display: flex;
@@ -239,7 +253,7 @@
   flex-direction: column;
   margin: 10px 20px 10px 20px;
   background-color: #f8f8f8;
-  border: 1px solid #f8f8f8;
+  border: 0px solid #f8f8f8;
   border-radius: 25px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
 }
@@ -278,23 +292,11 @@
   margin: 0px;
   padding-top: 5px;
 }
-.card__logo svg {
-  position: absolute;
-  width: 24px;
-  height: 22px;
-  z-index: 2;
-  right: 0;
-  fill-opacity: 0;
-  stroke-width: 20px;
-  stroke: black;
-  margin-right: 20px;
-}
-.card__logo svg:hover, .card__logo svg :active {
-  fill-opacity: 1;
-  stroke-width: 0;
-}
 
 @media only screen and (min-width: 768px) {
+  .fonction a {
+    width: 33%;
+  }
   .choices {
     display: flex;
     flex-direction: row;
@@ -326,21 +328,6 @@
   font-weight: 400;
   margin: 0;
 }
-.menu__heading svg {
-  position: absolute;
-  width: 24px;
-  height: 22px;
-  z-index: 2;
-  right: 0;
-  fill-opacity: 0;
-  stroke-width: 20px;
-  stroke: black;
-  margin-right: 20px;
-}
-.menu__heading svg:hover {
-  fill-opacity: 1;
-  stroke-width: 0;
-}
 .menu__body {
   display: flex;
   flex-direction: column;
@@ -351,7 +338,7 @@
   display: flex;
   justify-content: center;
 }
-.menu #explore {
+.menu #btn {
   margin: 0;
 }
 
@@ -395,16 +382,17 @@
   }
 }
 .plates h2 {
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: 200;
   margin-bottom: 5px;
 }
-.plates span p {
+.plates span {
   width: 40px;
   height: 3px;
   border: 1.5px solid #99E2D0;
   background-color: #99E2D0;
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 .plates__choices {
   display: flex;
@@ -419,6 +407,9 @@
 }
 .plates__choices--1 {
   animation: item-1 1000ms 200ms;
+}
+.plates__choices--1:hover .plates__card-text, .plates__choices--1 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--1:hover .check, .plates__choices--1 :active .check {
   padding: 15px 16px 15px 16px;
@@ -436,7 +427,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-1 {
@@ -449,6 +440,9 @@
 }
 .plates__choices--2 {
   animation: item-2 1000ms 400ms;
+}
+.plates__choices--2:hover .plates__card-text, .plates__choices--2 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--2:hover .check, .plates__choices--2 :active .check {
   padding: 15px 16px 15px 16px;
@@ -466,7 +460,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-2 {
@@ -479,6 +473,9 @@
 }
 .plates__choices--3 {
   animation: item-3 1000ms 600ms;
+}
+.plates__choices--3:hover .plates__card-text, .plates__choices--3 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--3:hover .check, .plates__choices--3 :active .check {
   padding: 15px 16px 15px 16px;
@@ -496,7 +493,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-3 {
@@ -509,6 +506,9 @@
 }
 .plates__choices--4 {
   animation: item-4 1000ms 1000ms;
+}
+.plates__choices--4:hover .plates__card-text, .plates__choices--4 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--4:hover .check, .plates__choices--4 :active .check {
   padding: 15px 16px 15px 16px;
@@ -526,7 +526,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-4 {
@@ -539,6 +539,9 @@
 }
 .plates__choices--5 {
   animation: item-5 1000ms 1200ms;
+}
+.plates__choices--5:hover .plates__card-text, .plates__choices--5 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--5:hover .check, .plates__choices--5 :active .check {
   padding: 15px 16px 15px 16px;
@@ -556,7 +559,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-5 {
@@ -569,6 +572,9 @@
 }
 .plates__choices--6 {
   animation: item-6 1000ms 1400ms;
+}
+.plates__choices--6:hover .plates__card-text, .plates__choices--6 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--6:hover .check, .plates__choices--6 :active .check {
   padding: 15px 16px 15px 16px;
@@ -586,7 +592,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-6 {
@@ -599,6 +605,9 @@
 }
 .plates__choices--7 {
   animation: item-7 1000ms 1800ms;
+}
+.plates__choices--7:hover .plates__card-text, .plates__choices--7 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--7:hover .check, .plates__choices--7 :active .check {
   padding: 15px 16px 15px 16px;
@@ -616,7 +625,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-7 {
@@ -629,6 +638,9 @@
 }
 .plates__choices--8 {
   animation: item-8 1000ms 2000ms;
+}
+.plates__choices--8:hover .plates__card-text, .plates__choices--8 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--8:hover .check, .plates__choices--8 :active .check {
   padding: 15px 16px 15px 16px;
@@ -646,7 +658,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-8 {
@@ -659,6 +671,9 @@
 }
 .plates__choices--9 {
   animation: item-9 1000ms 2200ms;
+}
+.plates__choices--9:hover .plates__card-text, .plates__choices--9 :active .plates__card-text {
+  width: calc(100% - 124px);
 }
 .plates__choices--9:hover .check, .plates__choices--9 :active .check {
   padding: 15px 16px 15px 16px;
@@ -676,7 +691,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0) deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes item-9 {
