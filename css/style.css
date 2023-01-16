@@ -6,6 +6,7 @@
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   border: 0px solid #f8f8f8;
   border-radius: 100px;
+  cursor: pointer;
 }
 #btn:hover, #btn :active {
   transform: scale(1.02);
@@ -19,12 +20,13 @@ svg {
   z-index: 2;
   right: 0;
   fill-opacity: 0;
-  stroke-width: 20px;
+  stroke-width: 35px;
   stroke: black;
   margin-right: 20px;
 }
 svg:hover, svg :active {
   fill-opacity: 1;
+  transition: fill-opacity 2s;
   stroke-width: 0;
 }
 
@@ -157,10 +159,11 @@ svg:hover, svg :active {
   text-align: center;
 }
 .search-bar input {
-  width: 125px;
+  width: 128px;
+  height: 26px;
   background-color: #e8e8e8;
   border: none;
-  text-align: center;
+  padding-left: 5px;
   margin: 15px 0px 15px 0px;
 }
 
@@ -395,6 +398,7 @@ svg:hover, svg :active {
   margin-bottom: 10px;
 }
 .plates__choices {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -415,19 +419,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--1:hover .check i, .plates__choices--1 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-1 {
@@ -448,19 +451,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--2:hover .check i, .plates__choices--2 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-2 {
@@ -481,19 +483,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--3:hover .check i, .plates__choices--3 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-3 {
@@ -514,19 +515,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--4:hover .check i, .plates__choices--4 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-4 {
@@ -547,19 +547,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--5:hover .check i, .plates__choices--5 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-5 {
@@ -580,19 +579,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--6:hover .check i, .plates__choices--6 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-6 {
@@ -613,19 +611,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--7:hover .check i, .plates__choices--7 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-7 {
@@ -646,19 +643,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--8:hover .check i, .plates__choices--8 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-8 {
@@ -679,19 +675,18 @@ svg:hover, svg :active {
   padding: 15px 16px 15px 16px;
   width: 60px;
   height: 60px;
-  border: 2px solid #99E2D0;
   border-radius: 0px 15px 15px 0px;
   opacity: 1;
 }
 .plates__choices--9:hover .check i, .plates__choices--9 :active .check i {
-  animation: check 0.5s;
+  animation: check 1s;
 }
 @keyframes check {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes item-9 {
@@ -725,15 +720,17 @@ svg:hover, svg :active {
   padding: 20px 20px 0px 20px;
 }
 .plates__card-price .check {
-  padding: 0px;
+  z-index: 0;
+  padding: 15px 0px 15px 0px;
   width: 0px;
   height: 0px;
   border: 0px solid #99E2D0;
-  border-radius: 0px;
+  border-radius: 0px 15px 15px 0px;
   color: white;
   background-color: #99E2D0;
+  overflow: hidden;
   opacity: 0;
-  transition: width 0.1s;
+  transition: width 1s, padding 1s;
 }
 .plates__card-price .check i {
   font-size: 25px;
