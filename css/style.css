@@ -151,7 +151,7 @@ svg:hover, svg :active {
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .footer {
     flex-direction: row-reverse;
     padding-top: 30px;
@@ -318,7 +318,7 @@ svg:hover, svg :active {
   padding-top: 5px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .fonction a {
     width: 33%;
   }
@@ -767,11 +767,26 @@ svg:hover, svg :active {
   object-fit: cover;
 }
 
+@media only screen and (min-width: 1440px) {
+  .menu {
+    margin: 280px 20px 0px 20px;
+  }
+  .menu__heading {
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 20px 20px;
+  }
+  .plates {
+    margin: 0px 20px 0px 20px;
+  }
+  #wallpaper img {
+    margin-left: -20px;
+  }
+}
 html, body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
