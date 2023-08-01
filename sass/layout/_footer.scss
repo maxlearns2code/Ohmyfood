@@ -4,14 +4,15 @@
    display: flex;
    flex-direction: column;
    margin: 0;
+   padding: 22px 25px 22px 25px;
    background-color: darken(grey,25%);   
    &__logo {
-      filter: invert(100%);
-      margin: 25px 0px 0px 20px;      
-      width: 100px;
+      filter: invert(100%);      
+      width: 139px;
+      height: 27px;
    }
    &__items {
-      margin: 15px 0px 40px 20px;
+      margin-top: 9px;
       i {
          color: white;
          width: 14px;
@@ -23,10 +24,34 @@
          padding: 0;
       }
       li {
-         margin-top: 5px;
+         margin-top: 7px;
       }
       a {
          color: white;
+      }
+   }
+}
+@media only screen and (min-width : 768px) {
+   .footer {
+      flex-direction: row-reverse;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      height: 114px;
+      &__logo {
+         filter: invert(100%);
+         margin: 27px 0px 0px 18px;      
+      }
+      &__items {
+         ul {
+         display: flex;
+         flex-direction: row;
+         margin-top: 27px;  
+         }
+         li {
+            margin-top: 0;
+            margin-left: 7px;
+         }
+         
       }
    }
 }
