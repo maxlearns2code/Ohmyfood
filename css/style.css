@@ -1,5 +1,5 @@
 #btn {
-  width: 210px;
+  width: 186px;
   margin-bottom: 50px;
   padding: 14px 17px 14px 17px;
   color: white;
@@ -324,6 +324,20 @@ svg:hover, svg :active {
 }
 
 @media only screen and (min-width: 1440px) {
+  .discover__title {
+    font-size: 40px;
+    margin-top: 30px;
+    width: 645px;
+    height: 47px;
+  }
+  .discover__text {
+    width: 531px;
+    margin-top: 18px;
+  }
+  .fonction h2 {
+    margin-right: 180px;
+    margin-left: 180px;
+  }
   .fonction a {
     width: 33%;
   }
@@ -332,6 +346,8 @@ svg:hover, svg :active {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: 180px;
+    margin-left: 180px;
   }
   .card {
     width: 490px;
@@ -346,112 +362,15 @@ svg:hover, svg :active {
   #discover p {
     font-weight: 300;
   }
-  /*fonction*/
-  .fonction {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 55px;
-  }
-  .fonction h2 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 45px 20px 20px 20px;
-  }
-  .fonction a {
-    width: 100%;
-  }
-  .fonction__card {
-    display: flex;
-    align-items: center;
-    height: 75px;
-    margin: 10px 20px 10px 20px;
-    background-color: #f6f6f6;
-    border: 1px solid #f6f6f6;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px 2px #e8e8e8;
-  }
-  .fonction__card:hover {
-    transform: scale(1.02);
-    background-color: #ece1f9;
-    border: 1px solid #ece1f9;
-    box-shadow: 0px 5px 10px 2px #cfcfcf;
-  }
-  .fonction__card:hover i {
-    color: #9356DC;
-  }
-  .fonction__card h3 {
-    position: relative;
-    left: -10px;
-    margin-right: 10px;
-    padding: 3px 7px 3px 7px;
-    font-size: 14px;
-    color: white;
-    background: #9356DC;
-    border: 2px solid #9356DC;
-    border-radius: 100%;
-  }
-  .fonction__card i {
-    margin-right: 20px;
-    font-size: 22px;
-    color: grey;
-  }
-  .fonction__card p {
-    font-weight: 700;
-  }
   /*restaurants*/
   .restaurants {
-    display: flex;
-    flex-direction: column;
-    background-color: #f6f6f6;
-    padding-bottom: 45px;
+    padding-bottom: 0;
   }
   .restaurants h2 {
-    margin: 50px 20px 10px 20px;
+    margin: 30px 180px 0px 180px;
   }
-  .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 20px 10px 20px;
-    background-color: #f6f6f6;
-    border: 0px solid #f6f6f6;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px 2px #e8e8e8;
-  }
-  .card:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 5px 10px 2px #cfcfcf;
-  }
-  .card__image p {
-    position: absolute;
-    right: 20px;
-    text-align: center;
-    color: #278870;
-    font-size: 14px;
-    font-weight: 700;
-    border: 1px solid #99E2D0;
-    background-color: #99E2D0;
-    width: 80px;
-    padding: 8px 6px 5px 6px;
-  }
-  .card__image img {
-    width: 100%;
-    height: 175px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-  }
-  .card__body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px 0px 15px 10px;
-  }
-  .card__body h3 {
-    margin: 0;
-  }
-  .card__body p {
-    margin: 0px;
-    padding-top: 5px;
+  .restaurants .card {
+    margin: 25px 0px 25px 0px;
   }
 }
 /*menu*/
@@ -481,7 +400,7 @@ svg:hover, svg :active {
   margin: 0px 20px 0px 20px;
 }
 .menu form {
-  margin: 10px 0px 20px 0px;
+  margin: 10px 0px 40px 0px;
   display: flex;
   justify-content: center;
 }
