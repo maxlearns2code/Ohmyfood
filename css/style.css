@@ -190,22 +190,27 @@ svg:hover, svg :active {
 }
 
 /*discover*/
-#discover {
+.discover {
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #f6f6f6;
 }
-#discover h1 {
+.discover__title {
   text-align: center;
   font-size: 22px;
   font-weight: 700;
-  margin: 40px 75px 0px 75px;
+  margin: 40px 0px 0px 0px;
+  width: 275px;
+  height: 68px;
 }
-#discover p {
+.discover__text {
   text-align: center;
   font-size: 18px;
-  margin: 15px 30px 30px 30px;
+  font-weight: 300;
+  width: 315px;
+  height: 46px;
+  margin-top: 0;
 }
 
 /*fonction*/
@@ -325,11 +330,128 @@ svg:hover, svg :active {
   .choices {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .card {
-    width: 344px;
+    width: 490px;
+  }
+  /*discover*/
+  #discover h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px 75px 0px 75px;
+  }
+  #discover p {
+    font-weight: 300;
+  }
+  /*fonction*/
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+  .fonction h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 45px 20px 20px 20px;
+  }
+  .fonction a {
+    width: 100%;
+  }
+  .fonction__card {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    margin: 10px 20px 10px 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 2px #e8e8e8;
+  }
+  .fonction__card:hover {
+    transform: scale(1.02);
+    background-color: #ece1f9;
+    border: 1px solid #ece1f9;
+    box-shadow: 0px 5px 10px 2px #cfcfcf;
+  }
+  .fonction__card:hover i {
+    color: #9356DC;
+  }
+  .fonction__card h3 {
+    position: relative;
+    left: -10px;
+    margin-right: 10px;
+    padding: 3px 7px 3px 7px;
+    font-size: 14px;
+    color: white;
+    background: #9356DC;
+    border: 2px solid #9356DC;
+    border-radius: 100%;
+  }
+  .fonction__card i {
+    margin-right: 20px;
+    font-size: 22px;
+    color: grey;
+  }
+  .fonction__card p {
+    font-weight: 700;
+  }
+  /*restaurants*/
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding-bottom: 45px;
+  }
+  .restaurants h2 {
+    margin: 50px 20px 10px 20px;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 10px 20px;
+    background-color: #f6f6f6;
+    border: 0px solid #f6f6f6;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 2px #e8e8e8;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px 2px #cfcfcf;
+  }
+  .card__image p {
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    color: #278870;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #99E2D0;
+    background-color: #99E2D0;
+    width: 80px;
+    padding: 8px 6px 5px 6px;
+  }
+  .card__image img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .card__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px 15px 10px;
+  }
+  .card__body h3 {
+    margin: 0;
+  }
+  .card__body p {
+    margin: 0px;
+    padding-top: 5px;
   }
 }
 /*menu*/
