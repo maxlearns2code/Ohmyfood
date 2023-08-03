@@ -1,7 +1,10 @@
 #btn {
-   width: 186px;
-   margin-bottom: 50px;
-   padding: 14px 17px 14px 17px;
+   width: 218px;
+   height: 50px;
+   margin-top: 40px;
+   margin-bottom: 70px;
+   padding: 13px 19px 13px 19px;
+   font-weight: 500;
    color:white;
    background: $color-button;
    border: 0px solid $background-color;
@@ -9,7 +12,7 @@
    cursor: pointer;
    &:hover, :active {
       transform: scale(1.02);
-      box-shadow: 0px 5px 10px 2px darken(#e8e8e8,10%);
+      box-shadow: 0px 4px 10px 0px darken(#e8e8e8,10%);
    }
 }
 svg {

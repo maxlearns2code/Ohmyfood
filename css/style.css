@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 #btn {
-  width: 186px;
-  margin-bottom: 50px;
-  padding: 14px 17px 14px 17px;
+  width: 218px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding: 13px 19px 13px 19px;
+  font-weight: 500;
   color: white;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   border: 0px solid #f6f6f6;
@@ -10,7 +14,7 @@
 }
 #btn:hover, #btn :active {
   transform: scale(1.02);
-  box-shadow: 0px 5px 10px 2px #cfcfcf;
+  box-shadow: 0px 4px 10px 0px #cfcfcf;
 }
 
 svg {
@@ -832,21 +836,18 @@ svg:hover, svg :active {
     margin-left: -190px;
   }
 }
-html, body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 a {
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
