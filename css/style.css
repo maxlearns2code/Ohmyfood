@@ -124,7 +124,7 @@ svg:hover, svg :active {
   flex-direction: column;
   margin: 0;
   padding: 22px 25px 22px 25px;
-  background-color: #404040;
+  background-color: #343434;
 }
 .footer__logo {
   filter: invert(100%);
@@ -159,8 +159,7 @@ svg:hover, svg :active {
     height: 114px;
   }
   .footer__logo {
-    filter: invert(100%);
-    margin: 27px 0px 0px 18px;
+    margin: 30px 0px 0px 16px;
   }
   .footer__items ul {
     display: flex;
@@ -169,7 +168,7 @@ svg:hover, svg :active {
   }
   .footer__items li {
     margin-top: 0;
-    margin-left: 7px;
+    margin-left: 16px;
   }
 }
 /*main*/
