@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+/* Design System */
+/* Colors */
+/* Text configuration */
 #btn {
   width: 218px;
   height: 50px;
@@ -60,7 +63,7 @@ svg:hover, svg :active {
   font-family: "Shrikhand", cursive;
   padding: 5px;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 700;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -457,8 +460,7 @@ svg:hover, svg :active {
 }
 .plates h2 {
   text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 5px;
 }
 .plates span {
@@ -780,6 +782,7 @@ svg:hover, svg :active {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 15px;
+  font-weight: 300;
 }
 .plates__card-price {
   display: flex;
