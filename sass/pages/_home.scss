@@ -30,7 +30,7 @@
       margin: 40px 0px 0px 0px;
       width: 275px;
       height: 68px;
-      @media only screen and (min-width : 1440px) {
+      @include for-desktop {
          font-size: 40px;
          margin-top: 30px;
          width: 645px;
@@ -44,7 +44,7 @@
       width: 315px;
       height: 46px;
       margin-top: 0;
-      @media only screen and (min-width : 1440px) {
+      @include for-desktop {
          width: 531px;
          margin-top: 18px;
       }
@@ -52,7 +52,7 @@
    #btn {
       margin-top: 30px;
       margin-bottom: 60px;
-      @media only screen and (min-width : 1440px) {
+      @include for-desktop {
          margin-top: 0px;
          margin-bottom: 30px;
       }
@@ -67,14 +67,14 @@
    font-size: $big-font-size;
    font-weight: $bold-font-weight;
    margin: 45px 20px 20px 20px;
-   @media only screen and (min-width : 1440px) {
+   @include for-desktop {
       margin-right: 180px;
          margin-left: 180px;
    }
    }
    a {
       width: 100%;
-      @media only screen and (min-width : 1440px) {
+      @include for-desktop {
          width: 33%;
       }
    }
@@ -120,25 +120,25 @@
    flex-direction: column;
    background-color: $background-color;
    padding-bottom: 45px;
-   @media only screen and (min-width : 1440px) {
+   @include for-desktop {
       padding-bottom: 0;
    }
    h2 {
       font-size: $big-font-size;
       font-weight: $bold-font-weight;
       margin: 50px 20px 10px 20px;
-      @media only screen and (min-width : 1440px) {
+      @include for-desktop {
          margin: 30px 180px 0px 180px;
       }
    }
    .card {
-      @media only screen and (min-width : 1440px) {
+      @include for-desktop {
          margin: 25px 0px 25px 0px;
       }
    }
 }
 .choices {
-   @media only screen and (min-width : 1440px) {
+   @include for-desktop {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -156,7 +156,7 @@
    border: 0px solid $background-color;
    border-radius: 25px;
    box-shadow: 0px 5px 10px 2px #e8e8e8;
-   @media only screen and (min-width : 1440px) {
+   @include for-desktop {
       width: 490px;
    }
    &:hover {

@@ -10,7 +10,7 @@
    align-items: center;
    box-shadow: 0px 1px 10px 0px grey;
    padding: 20px 0px 10px 0px;
-   @media only screen and (min-width : 1440px) {
+   @include for-desktop {
       height: 95px;
       padding: 0px;
    }
@@ -19,6 +19,9 @@
       font-size: $big-font-size;
       top: 25px;
       left: 20px;
+      @include for-desktop {
+         top: 37px;
+      }
    }
    &__logo {
       width: 175px;
