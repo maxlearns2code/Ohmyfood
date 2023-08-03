@@ -10,6 +10,10 @@
    align-items: center;
    box-shadow: 0px 1px 10px 0px grey;
    padding: 20px 0px 10px 0px;
+   @media only screen and (min-width : 1440px) {
+      height: 95px;
+      padding: 0px;
+   }
    i {
       position: absolute;
       font-size: $big-font-size;
@@ -20,8 +24,4 @@
       width: 175px;
    }
 }
-@media only screen and (min-width : 1440px) {
-   .header {
-      padding: 30px 0px 30px 0px;
-   }
-}
+

@@ -2,7 +2,7 @@
 /*search-bar*/
 .search-bar {
    background-color: #e8e8e8;
-   margin-top: 65px;
+   margin-top: 94px;
    width: 100%;
    text-align: center;   
    input {
@@ -30,6 +30,12 @@
       margin: 40px 0px 0px 0px;
       width: 275px;
       height: 68px;
+      @media only screen and (min-width : 1440px) {
+         font-size: 40px;
+         margin-top: 30px;
+         width: 645px;
+         height: 47px;
+      }
    }
    &__text {
       text-align: center;
@@ -38,10 +44,18 @@
       width: 315px;
       height: 46px;
       margin-top: 0;
+      @media only screen and (min-width : 1440px) {
+         width: 531px;
+         margin-top: 18px;
+      }
    }
    #btn {
       margin-top: 30px;
       margin-bottom: 60px;
+      @media only screen and (min-width : 1440px) {
+         margin-top: 0px;
+         margin-bottom: 30px;
+      }
    }
 }
 /*fonction*/
@@ -53,9 +67,16 @@
    font-size: $big-font-size;
    font-weight: $bold-font-weight;
    margin: 45px 20px 20px 20px;
+   @media only screen and (min-width : 1440px) {
+      margin-right: 180px;
+         margin-left: 180px;
+   }
    }
    a {
       width: 100%;
+      @media only screen and (min-width : 1440px) {
+         width: 33%;
+      }
    }
    &__card {
       display: flex;
@@ -99,10 +120,31 @@
    flex-direction: column;
    background-color: $background-color;
    padding-bottom: 45px;
+   @media only screen and (min-width : 1440px) {
+      padding-bottom: 0;
+   }
    h2 {
       font-size: $big-font-size;
       font-weight: $bold-font-weight;
       margin: 50px 20px 10px 20px;
+      @media only screen and (min-width : 1440px) {
+         margin: 30px 180px 0px 180px;
+      }
+   }
+   .card {
+      @media only screen and (min-width : 1440px) {
+         margin: 25px 0px 25px 0px;
+      }
+   }
+}
+.choices {
+   @media only screen and (min-width : 1440px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-right: 180px;
+      margin-left: 180px;
    }
 }
 .card {
@@ -114,6 +156,9 @@
    border: 0px solid $background-color;
    border-radius: 25px;
    box-shadow: 0px 5px 10px 2px #e8e8e8;
+   @media only screen and (min-width : 1440px) {
+      width: 490px;
+   }
    &:hover {
       transform: scale(1.02);
       box-shadow: 0px 5px 10px 2px darken(#e8e8e8,10%);
@@ -152,66 +197,6 @@
          margin: 0px;
          padding-top: 5px;
          font-weight: $light-font-weight;
-      }
-   }
-}
-@media only screen and (min-width : 1440px) {
-   .discover {
-      &__title {
-         font-size: 40px;
-         margin-top: 30px;
-         width: 645px;
-         height: 47px;
-      }
-      &__text {
-         width: 531px;
-         margin-top: 18px;
-      }
-      #btn {
-         margin-top: 0px;
-         margin-bottom: 30px;
-      }
-   }
-   .fonction {
-      h2 {
-         margin-right: 180px;
-         margin-left: 180px;
-      }
-      a {
-         width: 33%;
-      }
-   }
-   .choices {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-right: 180px;
-      margin-left: 180px;
-   }
-   .card {
-      width: 490px;
-   }
-   /*discover*/
-   #discover {
-      h1 {
-         text-align: center;
-         font-size: 40px;
-         font-weight: $bold-font-weight;
-         margin: 40px 75px 0px 75px;
-      }
-      p {
-         font-weight: $light-font-weight;
-      }
-   }
-   /*restaurants*/
-   .restaurants {
-      padding-bottom: 0;
-      h2 {
-         margin: 30px 180px 0px 180px;
-      }
-      .card {
-         margin: 25px 0px 25px 0px;
       }
    }
 }

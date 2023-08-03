@@ -25,10 +25,23 @@ a {
   padding: 22px 25px 22px 25px;
   background-color: #343434;
 }
+@media only screen and (min-width: 1440px) {
+  .footer {
+    flex-direction: row-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 114px;
+  }
+}
 .footer__logo {
   filter: invert(100%);
   width: 139px;
   height: 27px;
+}
+@media only screen and (min-width: 1440px) {
+  .footer__logo {
+    margin: 30px 0px 0px 16px;
+  }
 }
 .footer__items {
   margin-top: 9px;
@@ -43,33 +56,26 @@ a {
   margin: 0;
   padding: 0;
 }
-.footer__items li {
-  margin-top: 7px;
-}
-.footer__items a {
-  color: white;
-}
-
 @media only screen and (min-width: 1440px) {
-  .footer {
-    flex-direction: row-reverse;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    height: 114px;
-  }
-  .footer__logo {
-    margin: 30px 0px 0px 16px;
-  }
   .footer__items ul {
     display: flex;
     flex-direction: row;
     margin-top: 27px;
   }
+}
+.footer__items li {
+  margin-top: 7px;
+}
+@media only screen and (min-width: 1440px) {
   .footer__items li {
     margin-top: 0;
     margin-left: 16px;
   }
 }
+.footer__items a {
+  color: white;
+}
+
 /*header*/
 .header {
   position: absolute;
@@ -83,6 +89,12 @@ a {
   box-shadow: 0px 1px 10px 0px grey;
   padding: 20px 0px 10px 0px;
 }
+@media only screen and (min-width: 1440px) {
+  .header {
+    height: 95px;
+    padding: 0px;
+  }
+}
 .header i {
   position: absolute;
   font-size: 24px;
@@ -93,11 +105,6 @@ a {
   width: 175px;
 }
 
-@media only screen and (min-width: 1440px) {
-  .header {
-    padding: 30px 0px 30px 0px;
-  }
-}
 #btn {
   height: 50px;
   padding: 13px 19px 13px 19px;
@@ -199,7 +206,7 @@ svg:hover, svg :active {
 /*search-bar*/
 .search-bar {
   background-color: #e8e8e8;
-  margin-top: 65px;
+  margin-top: 94px;
   width: 100%;
   text-align: center;
 }
@@ -231,6 +238,14 @@ svg:hover, svg :active {
   width: 275px;
   height: 68px;
 }
+@media only screen and (min-width: 1440px) {
+  .discover__title {
+    font-size: 40px;
+    margin-top: 30px;
+    width: 645px;
+    height: 47px;
+  }
+}
 .discover__text {
   text-align: center;
   font-size: 18px;
@@ -239,9 +254,21 @@ svg:hover, svg :active {
   height: 46px;
   margin-top: 0;
 }
+@media only screen and (min-width: 1440px) {
+  .discover__text {
+    width: 531px;
+    margin-top: 18px;
+  }
+}
 .discover #btn {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+@media only screen and (min-width: 1440px) {
+  .discover #btn {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 /*fonction*/
@@ -255,8 +282,19 @@ svg:hover, svg :active {
   font-weight: 700;
   margin: 45px 20px 20px 20px;
 }
+@media only screen and (min-width: 1440px) {
+  .fonction h2 {
+    margin-right: 180px;
+    margin-left: 180px;
+  }
+}
 .fonction a {
   width: 100%;
+}
+@media only screen and (min-width: 1440px) {
+  .fonction a {
+    width: 33%;
+  }
 }
 .fonction__card {
   display: flex;
@@ -301,10 +339,36 @@ svg:hover, svg :active {
   background-color: #f6f6f6;
   padding-bottom: 45px;
 }
+@media only screen and (min-width: 1440px) {
+  .restaurants {
+    padding-bottom: 0;
+  }
+}
 .restaurants h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 50px 20px 10px 20px;
+}
+@media only screen and (min-width: 1440px) {
+  .restaurants h2 {
+    margin: 30px 180px 0px 180px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .restaurants .card {
+    margin: 25px 0px 25px 0px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 180px;
+    margin-left: 180px;
+  }
 }
 
 .card {
@@ -316,6 +380,11 @@ svg:hover, svg :active {
   border: 0px solid #f6f6f6;
   border-radius: 25px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
+}
+@media only screen and (min-width: 1440px) {
+  .card {
+    width: 490px;
+  }
 }
 .card:hover {
   transform: scale(1.02);
@@ -356,60 +425,6 @@ svg:hover, svg :active {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 1440px) {
-  .discover__title {
-    font-size: 40px;
-    margin-top: 30px;
-    width: 645px;
-    height: 47px;
-  }
-  .discover__text {
-    width: 531px;
-    margin-top: 18px;
-  }
-  .discover #btn {
-    margin-top: 0px;
-    margin-bottom: 30px;
-  }
-  .fonction h2 {
-    margin-right: 180px;
-    margin-left: 180px;
-  }
-  .fonction a {
-    width: 33%;
-  }
-  .choices {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: 180px;
-    margin-left: 180px;
-  }
-  .card {
-    width: 490px;
-  }
-  /*discover*/
-  #discover h1 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 40px 75px 0px 75px;
-  }
-  #discover p {
-    font-weight: 300;
-  }
-  /*restaurants*/
-  .restaurants {
-    padding-bottom: 0;
-  }
-  .restaurants h2 {
-    margin: 30px 180px 0px 180px;
-  }
-  .restaurants .card {
-    margin: 25px 0px 25px 0px;
-  }
-}
 /*menu*/
 .menu {
   margin: 280px 0px 0px 0px;
@@ -419,12 +434,26 @@ svg:hover, svg :active {
   background-color: #f6f6f6;
   border-radius: 35px 35px 0px 0px;
 }
+@media only screen and (min-width: 1440px) {
+  .menu {
+    margin: 670px 190px 0px 190px;
+  }
+}
 .menu__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 30px 20px 20px 20px;
+}
+@media only screen and (min-width: 1440px) {
+  .menu__heading {
+    justify-content: center;
+  }
+  .menu__heading svg {
+    position: relative;
+    margin-left: 25px;
+  }
 }
 .menu__heading h1 {
   font-family: "Shrikhand", cursive;
@@ -450,6 +479,11 @@ svg:hover, svg :active {
 .plates {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (min-width: 1440px) {
+  .plates {
+    margin: 0px 210px 0px 210px;
+  }
 }
 .plates--1 {
   animation: starter 1000ms 0ms both;
@@ -841,28 +875,15 @@ svg:hover, svg :active {
   position: absolute;
   z-index: -1;
   top: 0;
-  margin-top: 65px;
+  margin-top: 94px;
   width: 100%;
   height: 270px;
   object-fit: cover;
 }
-
 @media only screen and (min-width: 1440px) {
-  .menu {
-    margin: 280px 190px 0px 190px;
-  }
-  .menu__heading {
-    justify-content: center;
-  }
-  .menu__heading svg {
-    position: relative;
-    margin-left: 25px;
-  }
-  .plates {
-    margin: 0px 210px 0px 210px;
-  }
   #wallpaper img {
     margin-left: -190px;
+    height: 630px;
   }
 }
 
