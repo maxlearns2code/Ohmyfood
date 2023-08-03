@@ -188,6 +188,10 @@ svg:hover, svg :active {
   margin: 15px 0px 15px 0px;
 }
 
+.sr-only {
+  display: none;
+}
+
 /*discover*/
 .discover {
   display: flex;
