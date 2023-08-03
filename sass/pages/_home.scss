@@ -39,6 +39,10 @@
       height: 46px;
       margin-top: 0;
    }
+   #btn {
+      margin-top: 30px;
+      margin-bottom: 60px;
+   }
 }
 /*fonction*/
 .fonction {
@@ -64,9 +68,6 @@
       box-shadow: 0px 5px 10px 2px #e8e8e8;
       &:hover {
          transform: scale(1.02);
-         background-color: lighten($color-primary,33%);
-         border: 1px solid lighten($color-primary,33%);
-         box-shadow: 0px 5px 10px 2px darken(#e8e8e8,10%) ;
          i {
             color: $color-primary;
          }
@@ -88,7 +89,7 @@
          color: grey;
       }
       p {
-         font-weight: $bold-font-weight
+         font-weight: $medium-font-weight
       }
    }
 }
@@ -99,7 +100,9 @@
    background-color: $background-color;
    padding-bottom: 45px;
    h2 {
-   margin: 50px 20px 10px 20px;
+      font-size: $big-font-size;
+      font-weight: $bold-font-weight;
+      margin: 50px 20px 10px 20px;
    }
 }
 .card {
@@ -141,11 +144,14 @@
       justify-content: space-between;
       margin: 10px 0px 15px 10px;
       h3 {
-            margin: 0;
+         font-size: $middle-font-size;
+         font-weight: $bold-font-weight;
+         margin: 0;
       }      
       p {
          margin: 0px;
          padding-top: 5px;
+         font-weight: $light-font-weight;
       }
    }
 }
@@ -160,6 +166,10 @@
       &__text {
          width: 531px;
          margin-top: 18px;
+      }
+      #btn {
+         margin-top: 0px;
+         margin-bottom: 30px;
       }
    }
    .fonction {

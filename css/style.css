@@ -9,6 +9,7 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
+  font-weight: 500;
 }
 
 a {
@@ -84,7 +85,7 @@ a {
 }
 .header i {
   position: absolute;
-  font-size: 22px;
+  font-size: 24px;
   top: 25px;
   left: 20px;
 }
@@ -92,11 +93,13 @@ a {
   width: 175px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding: 30px 0px 30px 0px;
+  }
+}
 #btn {
-  width: 218px;
   height: 50px;
-  margin-top: 40px;
-  margin-bottom: 70px;
   padding: 13px 19px 13px 19px;
   font-weight: 500;
   color: white;
@@ -119,7 +122,7 @@ svg {
   fill-opacity: 0;
   stroke-width: 35px;
   stroke: black;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 svg:hover, svg :active {
   fill-opacity: 1;
@@ -222,7 +225,7 @@ svg:hover, svg :active {
 }
 .discover__title {
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   margin: 40px 0px 0px 0px;
   width: 275px;
@@ -236,6 +239,10 @@ svg:hover, svg :active {
   height: 46px;
   margin-top: 0;
 }
+.discover #btn {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
 
 /*fonction*/
 .fonction {
@@ -244,7 +251,7 @@ svg:hover, svg :active {
   margin-bottom: 55px;
 }
 .fonction h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   margin: 45px 20px 20px 20px;
 }
@@ -263,9 +270,6 @@ svg:hover, svg :active {
 }
 .fonction__card:hover {
   transform: scale(1.02);
-  background-color: #ece1f9;
-  border: 1px solid #ece1f9;
-  box-shadow: 0px 5px 10px 2px #cfcfcf;
 }
 .fonction__card:hover i {
   color: #9356DC;
@@ -283,11 +287,11 @@ svg:hover, svg :active {
 }
 .fonction__card i {
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 24px;
   color: grey;
 }
 .fonction__card p {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /*restaurants*/
@@ -298,6 +302,8 @@ svg:hover, svg :active {
   padding-bottom: 45px;
 }
 .restaurants h2 {
+  font-size: 24px;
+  font-weight: 700;
   margin: 50px 20px 10px 20px;
 }
 
@@ -340,11 +346,14 @@ svg:hover, svg :active {
   margin: 10px 0px 15px 10px;
 }
 .card__body h3 {
+  font-size: 18px;
+  font-weight: 700;
   margin: 0;
 }
 .card__body p {
   margin: 0px;
   padding-top: 5px;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -357,6 +366,10 @@ svg:hover, svg :active {
   .discover__text {
     width: 531px;
     margin-top: 18px;
+  }
+  .discover #btn {
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   .fonction h2 {
     margin-right: 180px;
@@ -425,7 +438,7 @@ svg:hover, svg :active {
   margin: 0px 20px 0px 20px;
 }
 .menu form {
-  margin: 10px 0px 40px 0px;
+  margin: 40px 0px 40px 0px;
   display: flex;
   justify-content: center;
 }
@@ -437,7 +450,6 @@ svg:hover, svg :active {
 .plates {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 .plates--1 {
   animation: starter 1000ms 0ms both;
@@ -475,7 +487,7 @@ svg:hover, svg :active {
 .plates h2 {
   text-transform: uppercase;
   font-weight: 300;
-  margin-bottom: 5px;
+  margin-top: 40px;
 }
 .plates span {
   width: 40px;
@@ -493,7 +505,7 @@ svg:hover, svg :active {
   border-radius: 20px;
   box-shadow: 0px 5px 10px 2px #e8e8e8;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .plates__choices--1 {
   animation: item-1 1000ms 200ms;
