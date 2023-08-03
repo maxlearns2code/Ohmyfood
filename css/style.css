@@ -390,6 +390,7 @@ svg:hover, svg :active {
 }
 .menu__heading h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 28px;
   font-weight: 400;
   margin: 0;
 }
@@ -763,12 +764,14 @@ svg:hover, svg :active {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 18px;
 }
 .plates__card-text p {
   margin: 5px 0px 10px 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 15px;
 }
 .plates__card-price {
   display: flex;
@@ -809,18 +812,20 @@ svg:hover, svg :active {
 
 @media only screen and (min-width: 1440px) {
   .menu {
-    margin: 280px 20px 0px 20px;
+    margin: 280px 190px 0px 190px;
   }
   .menu__heading {
     justify-content: center;
-    align-items: center;
-    margin: 30px 20px 20px 20px;
+  }
+  .menu__heading svg {
+    position: relative;
+    margin-left: 25px;
   }
   .plates {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 210px 0px 210px;
   }
   #wallpaper img {
-    margin-left: -20px;
+    margin-left: -190px;
   }
 }
 html, body {
