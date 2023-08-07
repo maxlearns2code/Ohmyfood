@@ -6,14 +6,25 @@
    justify-content: space-between;
    background-color: $background-color;
    border-radius: 35px 35px 0px 0px;
+   @include for-desktop {
+         margin: 670px 190px 0px 190px;
+      }
    &__heading {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin: 30px 20px 20px 20px;  
+      margin: 30px 20px 20px 20px;
+      @include for-desktop {
+         justify-content: center;
+         svg {
+            position: relative;
+            margin-left: 25px;
+         }
+      }  
       h1 {
          font-family: $font-secondary;
+         font-size: 28px;
          font-weight: 400;
          margin: 0;
       }
@@ -24,19 +35,22 @@
       margin: 0px 20px 0px 20px;
    }
    form {
-      margin: 10px 0px 20px 0px;
+      margin: 40px 0px 40px 0px;
       display: flex;
       justify-content: center;
    }
    #btn {
       margin: 0;
    }
+   
 }
 /*plates*/
 .plates {
    display: flex;
    flex-direction: column;
-   margin-bottom: 20px;
+   @include for-desktop {
+      margin: 0px 210px 0px 210px;
+   }
    &--1 {
       animation: starter 1000ms 0ms both;
    }
@@ -72,9 +86,8 @@
    }
    h2 {
       text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 200;
-      margin-bottom: 5px;
+      font-weight: $light-font-weight;
+      margin-top: 40px;
    }
    span {
       width: 40px;
@@ -92,7 +105,7 @@
       border-radius: 20px;
       box-shadow: 0px 5px 10px 2px #e8e8e8;
       font-size: 14px;
-      margin-bottom: 10px;
+      margin-top: 10px;
       &--1 {
          @include check-animation;
          animation: item-1 1000ms 200ms;
@@ -208,12 +221,15 @@
          overflow: hidden;
          white-space: nowrap;
          text-overflow: ellipsis;
+         font-size: $middle-font-size
       }
       p {
          margin: 5px 0px 10px 10px;
          overflow: hidden;
          white-space: nowrap;
          text-overflow: ellipsis;
+         font-size: 15px;
+         font-weight: $light-font-weight;
       }
    }
    &__card-price {
@@ -223,7 +239,7 @@
       overflow: hidden;
       animation: card-price 1000ms 200ms;
       p {
-         font-weight: 700;
+         font-weight: $bold-font-weight;
          margin-bottom: 10px;
          padding: 20px 20px 0px 20px;
       }
@@ -248,9 +264,13 @@
       position: absolute;
       z-index: -1;
       top:0;
-      margin-top: 65px;
+      margin-top: 94px;
       width: 100%;
       height: 270px;
       object-fit: cover;
+      @include for-desktop {
+         margin-left: -190px;
+         height: 630px;
+      }
    }
 }

@@ -23,7 +23,7 @@
       font-family: $font-secondary;
       padding: 5px;
       font-size: 50px;
-      font-weight: 900;
+      font-weight: $bold-font-weight;
       background: $color-button;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;

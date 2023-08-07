@@ -1,24 +1,15 @@
-@import "./utils/mixins";
-@import "./utils/variables";
-@import "./layout/buttons";
-@import "./layout/loader";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./pages/landing";
-@import "./pages/menu";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
-html, body {
-   font-family: $font-primary;
-   font-style: normal;
-   font-size: 16px;
-   height: 100%;
-   margin: 0;
-   padding: 0;
- }
-* {
-   box-sizing: border-box;
-}
-a {
-   color: black;
-   text-decoration: none;   
-}
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/reset";
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./components/buttons";
+@import "./components/loader";
+
+@import "./pages/home";
+@import "./pages/menu";
