@@ -5,11 +5,11 @@
 
 @import "./base/reset";
 
-@import "./layout/footer";
-@import "./layout/header";
-
 @import "./components/buttons";
 @import "./components/loader";
+
+@import "./layout/footer";
+@import "./layout/header";
 
 @import "./pages/home";
 @import "./pages/menu";
