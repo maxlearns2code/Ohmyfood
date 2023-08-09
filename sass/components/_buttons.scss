@@ -22,9 +22,9 @@ svg {
    stroke-width: 35px;
    stroke: black;
    margin-right: 50px;
+   transition: fill-opacity 2s;
    &:hover, :active {
       fill-opacity: 1;
-      transition: fill-opacity 2s;
       stroke-width: 0;
    }
 }
