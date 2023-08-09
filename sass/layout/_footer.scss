@@ -15,10 +15,11 @@
    }   
    &__logo {
       filter: invert(100%);      
-      width: 139px;
-      height: 27px;
+      width: 104px;
+      height: 18px;
+      flex-shrink: 0;
       @include for-desktop {
-         margin: 30px 0px 0px 16px;            
+         margin: 32px 30px 0px 16px;            
       } 
    }
    &__items {
@@ -40,13 +41,20 @@
       }
       li {
          margin-top: 7px;
+         width: 200px;
          @include for-desktop {
             margin-top: 0;
-            margin-left: 16px;           
+            margin-left: 7px;           
          } 
       }
       a {
          color: white;
+      }
+      .li--small-size {
+         width: 130px;
+      }
+      .li--light {
+         font-weight: $light-font-weight;
       }
    }
 }
