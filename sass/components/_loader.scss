@@ -25,6 +25,8 @@
       font-size: 50px;
       font-weight: $bold-font-weight;
       background: $color-button;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
       animation: letter infinite 0.3s alternate;
       @keyframes letter {
          0% {
