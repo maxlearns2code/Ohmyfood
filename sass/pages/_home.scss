@@ -180,15 +180,18 @@
    &__image {
          p {
          position: absolute;
-         right: 20px;
+         top: 13px;
+         right: 12px;
          text-align: center;
          color: darken($color-tertiary,40%);
          font-size: 14px;
-         font-weight: $bold-font-weight;
+         font-weight: $medium-font-weight;
          border: 1px solid $color-tertiary;
+         border-radius: 2px;
          background-color: $color-tertiary;
          width: 80px;
-         padding: 8px 6px 5px 6px;
+         height: 29px;
+         padding: 6px 9px 6px 9px;
       }
       img {
          width: 100%;
